@@ -4,9 +4,7 @@ import { RootState } from "../../../redux/store";
 import Textbox from "../../Textbox/Textbox";
 import "./userinfo.scss"
 import { Camera } from "../../../Assets/Camera";
-const imgUrl =
-  "https://dothobattrang.vn/wp-content/uploads/2018/05/con-meo-hoang-vao-nha-la-diem-bao-gi-hen.jpg";
-
+const imgUrl = "https://cdn.pixabay.com/photo/2019/12/16/07/20/indian-police-4698728_960_720.png"
 const UserInfo: React.FC = () => {
     const userInfo = useSelector((state : RootState) => state.user)
     return (

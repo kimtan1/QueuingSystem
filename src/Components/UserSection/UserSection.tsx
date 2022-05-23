@@ -4,7 +4,7 @@ import Bell from "../../Assets/Bell";
 import { useNavigate } from "react-router";
 
 const imgUrl =
-  "https://dothobattrang.vn/wp-content/uploads/2018/05/con-meo-hoang-vao-nha-la-diem-bao-gi-hen.jpg";
+  "https://cdn.pixabay.com/photo/2019/12/16/07/20/indian-police-4698728_960_720.png";
 const notifications = [
   { user: "Nguyễn Thị Thùy Dung", content: "12h30 ngày 31/2/2020" },
   { user: "Nguyễn Thiên Trinh", content: "12h30 ngày 31/2/2020" },
@@ -53,7 +53,8 @@ const UserSection: React.FC = () => {
       </div>
       <div className="hello-user">
         <span className="hello">Xin chào</span>
-        <span className="user-name">Lê Kim Tân</span>
+        <span className="user-name">Kim Tân</span>
+
       </div>
     </div>
   );
