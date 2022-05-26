@@ -7,7 +7,7 @@ const initialState: userInfo = {
 
   userName: "kimtan1",
   fullName: "Lê Kim Tân",
-  phoneNumber: "0999999999",
+  phoneNumber: "099999999",
   email: "kimtan1@gmail.com",
   password: "meomeo",
   role: 0,
