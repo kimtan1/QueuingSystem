@@ -7,7 +7,7 @@ const initialState: userInfo = {
 
   userName: "kimtan1",
   fullName: "Lê Kim Tân",
-  phoneNumber: "099999999",
+  phoneNumber: "0999999999",
   email: "kimtan1@gmail.com",
   password: "meomeo",
   role: 0,
@@ -18,10 +18,16 @@ const initialState: userInfo = {
     name: 'user',
     initialState,
     reducers: {
+      login: (state, actions) => {
+        state.email = actions.payload.email
+      },
+      logout: (state) => {
+        state.email = ""
+      }
     },
   });
   
   // To able to use reducers we need to export them.
-  export const { } = userSlice.actions;
+  export const { login, logout } = userSlice.actions;
   
   export default userSlice.reducer;
