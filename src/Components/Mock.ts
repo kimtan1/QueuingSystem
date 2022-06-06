@@ -4,7 +4,149 @@ import {
   IServiceRow,
   QueueStatus,
   Service,
+  IQueueRow,
+  IUserRow,
+  IReportRow
 } from './Table/Table';
+
+export const reportList: IReportRow[] = [
+  {
+    no: 2010001,
+    serviceName: [Service.Heart],
+    grantTime: '7:20 - 07/10/2022',
+    queueStatus: QueueStatus.pending,
+    provideBy: 'Kiosk'
+  },
+  {
+    no: 2010001,
+    serviceName: [Service.Heart],
+    grantTime: '7:20 - 07/10/2022',
+    queueStatus: QueueStatus.aborted,
+    provideBy: 'Kiosk'
+  },
+]
+export const userList: IUserRow[] = [
+  {
+    userName: 'kimthinh1',
+    fullName: 'Lê Kim Thịnh',
+    phoneNumber: '08888888888',
+    email: 'kimthinh1@gmail.com',
+    role: 'Kế toán',
+    isActivated: true,
+    userUpdate: true,
+  },
+  {
+    userName: 'kimthinh1',
+    fullName: 'Lê Kim Thịnh',
+    phoneNumber: '08888888888',
+    email: 'kimthinh1@gmail.com',
+    role: 'Kế toán',
+    isActivated: false,
+    userUpdate: true,
+  },
+  {
+    userName: 'kimthinh1',
+    fullName: 'Lê Kim Thịnh',
+    phoneNumber: '08888888888',
+    email: 'kimthinh1@gmail.com',
+    role: 'Kế toán',
+    isActivated: false,
+    userUpdate: true,
+  },
+
+]
+export const queueTable: IQueueRow[] = [
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.pending,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.aborted,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+];
 
 export const deviceList: IDeviceRow[] = [
   {

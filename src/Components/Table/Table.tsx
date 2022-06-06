@@ -42,6 +42,12 @@ export enum ColumnLabels {
   expireTime = 'Hạn sử dụng',
   queueStatus = 'Trạng thái',
   provideBy = 'Nguồn cấp',
+
+  userName = 'Tên đăng nhập',
+  fullName = 'Họ tên',
+  phoneNumber = 'Số điện thoại',
+  email = 'Email',
+  role = 'Vai trò',
 }
 
 export enum DisplayedColumns {
@@ -65,6 +71,14 @@ export enum DisplayedColumns {
   queueStatus = 'queueStatus',
   provideBy = 'provideBy',
   queueDetail = 'queueDetail',
+
+  userName = 'userName',
+  fullName = 'fullName',
+  phoneNumber = 'phoneNumber',
+  email = 'email',
+  role = 'role',
+
+  userUpdate = 'userUpdate'
 }
 
 // export enum ServiceColumns {
@@ -99,12 +113,30 @@ export interface IServiceRow {
 export interface IQueueRow {
   no: number;
   customerName: string;
-  serviceName: string;
-  grantTime: Date;
-  expireTime: Date;
+  serviceName: Service[];
+  grantTime: string;
+  expireTime: string;
   queueStatus: QueueStatus;
   provideBy: string;
   queueDetail: boolean;
+}
+
+export interface IReportRow{
+  no: number;
+  serviceName: Service[];
+  grantTime: string;
+  queueStatus: QueueStatus;
+  provideBy: string;
+}
+
+export interface IUserRow{
+  userName: string;
+  fullName: string;
+  phoneNumber: string;
+  email: string;
+  role: string;
+  isActivated: boolean;
+  userUpdate: boolean;
 }
 
 export interface IServiceQueue {

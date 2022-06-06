@@ -5,7 +5,9 @@ import Textbox from "../../Textbox/Textbox";
 import "./userinfo.scss"
 import {ReactComponent as CameraIc} from "../../../Assets/camera.svg"
 // [XxxxIc]
-const imgUrl = "https://cdn.pixabay.com/photo/2019/12/16/07/20/indian-police-4698728_960_720.png"
+const imgUrl =
+  'https://scontent.fsgn5-15.fna.fbcdn.net/v/t1.15752-9/280456204_850331862593722_6796225965863368502_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=dcaDmjBWarcAX8viF6b&_nc_ht=scontent.fsgn5-15.fna&oh=03_AVIX0X9FNAAF0zRrl4u4NzkEVYeWmp_keO7T2iP1kMAJZA&oe=62AECF0E';
+
 const UserInfo: React.FC = () => {
   const userInfo = useSelector((state: RootState) => state.user);
   return (

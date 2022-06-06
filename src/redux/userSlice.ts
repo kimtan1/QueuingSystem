@@ -5,7 +5,7 @@ import { userInfo } from './types';
 
 const initialState: userInfo = {
 
-  userName: "kimtan1",
+  userName: "Kimtan1",
   fullName: "Lê Kim Tân",
   phoneNumber: "0999999999",
   email: "kimtan1@gmail.com",
